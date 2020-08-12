@@ -1,10 +1,10 @@
 # [CityUp Sounds][https://cityupsounds.github.io/online/]
 
-#### - 🔭 I’m currently working on..... Python script to build HTML and CSS static sites
+#### - 🔭 I’m currently working on: -> Python script to build HTML and CSS static sites.
 
-#### - 🌱 I’m currently learning ... HTML + CSS + Python
+#### - 🌱 I’m currently learning:   -> HTML + CSS + Python.
 
-#### - 📫 How to reach me: ... best contact via [twitter]
+#### - 📫 How to reach me:          -> Best to contact via [Twitter].
 
 
 
@@ -12,7 +12,7 @@
 <!--display some text [link text itself].-->
 
 [https://cityupsounds.github.io/online/]: https://cityupsounds.github.io/online/
-[twitter]:https://twitter.com/cityupsounds
+[Twitter]:https://twitter.com/cityupsounds
 
 
 
