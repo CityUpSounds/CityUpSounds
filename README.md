@@ -1,10 +1,11 @@
 # [CityUp Sounds][https://cityupsounds.github.io/online/]
 
-#### - 🔭 I’m currently working on: -> Python script to build HTML and CSS static sites.
 
-#### - 🌱 I’m currently learning:   -> HTML + CSS + Python.
+#### CityUp Sounds is a static HTML and CSS based website.
+#### CityUp Sounds shares a collection of sound recordings via [Bandcamp]
 
-#### - 📫 How to reach me:          -> Best to contact via [Twitter].
+
+###### - 📫 How to reach me:          -> Best to contact via [Twitter].
 
 
 
@@ -13,26 +14,4 @@
 
 [https://cityupsounds.github.io/online/]: https://cityupsounds.github.io/online/
 [Twitter]:https://twitter.com/cityupsounds
-
-
-
-
-
-
-
-
-
-<!--
-**CityUpSounds/CityUpSounds** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+[Bandcamp]:cityupsounds.bandcamp.com
