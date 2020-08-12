@@ -1,0 +1,91 @@
+/* The css/style.css file is linked first which contains global variables including but not limited to padding, margin and primarly global colour variables. */
+
+.navbar__wrapper{
+    position: fixed; 
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: space-between;  
+    z-index: 15;  
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    flex-wrap: wrap;
+}
+.navbar__logo{
+    display: flex;
+    justify-content: left;
+    color: var(--logo_colour);    
+    font-size: 1.5rem;
+    text-decoration: none;    
+    flex: 2;
+    min-width: 280px;
+    text-shadow: black 3px 3px;
+}
+.navbar__menu{
+    background-color: rgb(0,0,0,0);    
+    display: flex;   
+    justify-content: space-evenly;
+    flex: 2;
+    min-width: 250px;
+    text-shadow: black 3px 3px;
+}
+.navbar__menu a{
+    color: var(--navbar_menu_colour);
+    border-top: solid rgba(0, 0, 0, 0) 3px;
+    border-bottom: solid rgba(0, 0, 0, 0) 3px;      
+    text-decoration: none;
+    font-size: 1.5rem;    
+    padding: 3px;
+}
+.menu_item_social{
+    display: flex;
+    justify-content: center;
+    border-top: solid rgba(0, 0, 0, 0) 3px;
+    border-bottom: solid rgba(0, 0, 0, 0) 3px;   
+    flex: 1;
+    min-width: 150px;
+    font-size: 1.5rem;
+    text-shadow: black 3px 3px;
+}
+.menu_item_social a{
+    margin-left: .5rem;
+    color: white;
+}
+.menu_item_social a:hover{
+    color: orangered;
+}
+.navbar__menu a:hover{
+    color: var(--tertiary_colour);
+    border-color: orangered    
+}
+
+
+@media (max-width: 630px) {    
+    .navbar__wrapper{
+        position: relative; 
+        flex-direction: column; 
+        padding-left: 0px;
+        padding-right: 0px;
+        min-width: 0px;
+    }   
+    .navbar__logo{
+        justify-content: center;
+        min-width: 0px;
+        margin-bottom: 1rem;
+    }
+    .navbar__menu{
+        margin-bottom: 1rem;}
+    .menu_item_social{
+        justify-content: center;
+        min-width: 0px;
+    }
+}
+@media (max-width: 280px) { 
+    .navbar__logo{
+        font-size: 1rem;
+    }
+}   
