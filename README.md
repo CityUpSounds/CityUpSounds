@@ -2,9 +2,9 @@
 
 ### - 🔭 I’m currently working on..... [https://cityupsounds.github.io/online/]
 
-####- 🌱 I’m currently learning ...HTML + CSS + Python
+#### - 🌱 I’m currently learning ...HTML + CSS + Python
 
-####- 📫 How to reach me: ... Via [twitter]
+#### - 📫 How to reach me: ... Via [twitter]
 
 
 
