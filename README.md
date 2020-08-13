@@ -1,7 +1,7 @@
 # [CityUp Sounds]
 #### __CityUp Sounds__ is a static HTML and CSS based website.
-..*CityUp Sounds shares a collection of sound recordings via [Bandcamp]
-.* __CityUp Sounds__ shares the recording of sounds on [YouTube]
+...* CityUp Sounds shares a collection of sound recordings via [Bandcamp]
+... __CityUp Sounds__ shares the recording of sounds on [YouTube]
 ***
 📫 The best way to reach out to me is via [Twitter].
 ***
