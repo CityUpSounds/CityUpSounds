@@ -37,15 +37,20 @@
 
 <main>
 <article class="compliance__article">
-<div class="error-page-404">
-<hr>
-<h1>An Error Has Occured</h1>
-<p>The Link you have selected is either broken or page is missing.</p>
-<p>Link below will take you back to the home page.</p>
-<a href="https://cityupsounds.github.io/">
-<p><b>Return to Homepage</b></p>
+<div class="compliance__article__title">
+<h1>Cookie Policy</h1>
+</div>
+<div class="compliance__article__content">
+<p><b>CityUp Sounds</b> is committed to providing quality services to you and this policy outlines the sites ongoing obligations to you in respect to cookies via this site.</p>
+<h2>Cookies</h2>
+<p>Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from a website that you visit and are stored on your computers hard drive. Third party applications such as Google Analytics and Social Media Sites may use cookies or other internet technologies to provide information on the use of this website and certain online products and services. Information in a cookie does not personally identify you. However, it provide details of the areas of the site which you have been browsing and the number of times that you have accessed the website. Cookies from this website are not used by us to collect or store personal information.</p>
+<p>If you feel uncomfortable about the use of cookies, some browsers such as Chrome and FireFox allow the user to disable cookies all together from the settings / options menu.</p>
+<h2>Policy Updates</h2>
+<p>This Policy may change from time to time and is available on this website.</p>
+<h2>Cookie Policy Complaints and Enquiries</h2>
+<p>If you have any queries or complaints about our Cookie Policy please contact us at:</p>
+<a href="https://twitter.com/CityupSounds">            <p><b>https://twitter.com/CityupSounds</b></p>
 </a>
-<hr>
 </div>
 </article>
 </main>
