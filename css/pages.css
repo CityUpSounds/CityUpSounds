@@ -286,3 +286,13 @@
     margin-left: 2rem;
     font-size: 1.2rem;
 }
+.compliance__article__flex__column{
+    display: flex;
+    flex-direction: column;
+}
+.compliance__article__indent{
+    margin-left: 2rem;
+}
+.compliance__article__bold{
+    font-weight: bolder;
+}
