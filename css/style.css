@@ -43,7 +43,21 @@ body{
    
 }
 
-
+.flex__column{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;    
+}
+.radius{
+    border-radius: 5px;
+}
+.flex__row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
     /* ============================
             Hero Container
@@ -113,6 +127,8 @@ body{
         height: 80vh;
     }
     
+
+
 
 
 /* ============================
