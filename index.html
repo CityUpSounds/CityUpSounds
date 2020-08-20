@@ -1,96 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home Page | CityUp Sounds</title>
-<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/nav.css">
-<link rel="stylesheet" href="css/footer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-<nav class="navbar__wrapper">
-<a href="https://cityupsounds.github.io/" class="navbar__logo">
-<h1>CityUp Sounds</h1>
-</a>
-<div class="navbar__menu">
-<a href="pages/equipment.html">Equipment</a>
-<a href="pages/about.html">About</a>
-</div>
-<div class="menu_item_social">
-<a href="https://twitter.com/CityupSounds"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-<a href="https://www.instagram.com/cityupsounds/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-<a href="YouTube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-<a href="https://cityupsounds.bandcamp.com/"><i class="fa fa-bandcamp" aria-hidden="true"></i></a>
-</div>
-</nav>
-<section>
-<div class="hero__overlay">
-<div class="waveform__overlay"></div>
-</div>
-<div class="transparent__divider divider-20"></div>
-<div class="site__title__overlay">
-<h1>CityUp Sounds</h1>
-<div class="site__title__overlay__horizontal__line"></div>
-<p>Capture the Sound | Capture the Moment</p>
-</div>
-<div class="transparent__divider divider-30"></div>
-</section>
+<header id="navigateToTop" class="navBarContainer">
+    <a class="navBarLogo" href="">
+        <h1>CityUp Sounds</h1>
+    </a>
+    <nav class="navBarSocial">
+        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-bandcamp" aria-hidden="true"></i></a>
+    </nav>
+</header>
 
-<main>
 
-<div class="box__wrapper  box__wrapper__index__page">
-<div class="short__article">
-<div class="short__article__numimg">
-<a href="./pages/Footstep_Tram_Tracks.html" class="box"><img loading="lazy" src="./img/0001.jpg" alt=""></a>
-<a href="./pages/Footstep_Tram_Tracks.html" class="article__number">1</a>
-</div>
-<div href="./pages/Footstep_Tram_Tracks.html" class="short__article__text">
-<a href="./pages/Footstep_Tram_Tracks.html"><h2>Footsteps - Tram Tracks</h2></a>
-<a href="./pages/Footstep_Tram_Tracks.html"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cumque corrupti aperiam eius se....</p></a>
-</div>
-</div>
-<div class="short__article">
-<div class="short__article__numimg">
-<a href="./pages/Footstep_Bush_Tracks.html" class="box"><img loading="lazy" src="./img/0002.jpg" alt=""></a>
-<a href="./pages/Footstep_Bush_Tracks.html" class="article__number">2</a>
-</div>
-<div href="./pages/Footstep_Bush_Tracks.html" class="short__article__text">
-<a href="./pages/Footstep_Bush_Tracks.html"><h2>Footsteps - Bush Tracks</h2></a>
-<a href="./pages/Footstep_Bush_Tracks.html"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur similique nostrum maxime accus....</p></a>
-</div>
-</div>
-</main>
-<div class="transparent__divider divider-20"></div>
-<footer>
-<div class="footer__flex__section">
-<div class="footer__logo">
-<a href="https://cityupsounds.github.io/">
-<h1>CityUp Sounds</h1>
-</a>
-</div>
-<nav class="footer__nav">
-<a href="pages/about.html">About</a>
-<a href="pages/equipment.html">Equipment</a>
-<a href="pages/cookie_policy.html">Cookie Policy</a>
-<a href="pages/privacy_policy.html">Privacy Policy</a>
-<a href="pages/sitemap.html">Sitemap</a>
-</nav>
-</div>
-<div class="footer__social">
-<a href="https://twitter.com/CityupSounds"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-<a href="https://www.instagram.com/cityupsounds/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-<a href="YouTube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-<a href="https://cityupsounds.bandcamp.com/"><i class="fa fa-bandcamp" aria-hidden="true"></i></a>
-</div>
-<div class="footer__copyright">
-<a href="pages/sitemap.html">Copyright CityUp Sounds &copy 2020</a>
-</div>
-</footer>
+
+
+
+
+
+<body class="mainContainer">
+    <article>
+        <a href="CARD" class="cardContainer">
+            <img class="cardThumbnail" src="img/Heroimage.jpg" alt="">
+            <div class="cardDescriptionContainer">
+                <div class="cardNumberBox">
+                    <p>001</p>
+                </div>
+                <div class="cardTextBox">
+                    <h2>Footsteps Tram Tracks</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae facilis sequi tenetur,
+                        eligendi quod sunt nihil nisi quaerat animi cumque ea aperiam, totam nostrum </p>
+                </div>
+            </div>
+        </a>
+    </article>
+    <article>
+        <a href="CARD" class="cardContainer">
+            <img class="cardThumbnail" src="img/Heroimage.jpg" alt="">
+            <div class="cardDescriptionContainer">
+                <div class="cardNumberBox">
+                    <p>002</p>
+                </div>
+                <div class="cardTextBox">
+                    <h2>Footsteps Tram Tracks</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae facilis sequi tenetur,
+                        eligendi quod sunt nihil nisi quaerat animi cumque ea aperiam, totam nostrum </p>
+                </div>
+            </div>
+        </a>
+    </article>
+    <article>
+        <a href="CARD" class="cardContainer">
+            <img class="cardThumbnail" src="img/Heroimage.jpg" alt="">
+            <div class="cardDescriptionContainer">
+                <div class="cardNumberBox">
+                    <p>003</p>
+                </div>
+                <div class="cardTextBox">
+                    <h2>Footsteps Tram Tracks</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae facilis sequi tenetur,
+                        eligendi quod sunt nihil nisi quaerat animi cumque ea aperiam, totam nostrum </p>
+                </div>
+            </div>
+        </a>
+    </article>
+    <article>
+        <a href="CARD" class="cardContainer">
+            <img class="cardThumbnail" src="img/Heroimage.jpg" alt="">
+            <div class="cardDescriptionContainer">
+                <div class="cardNumberBox">
+                    <p>004</p>
+                </div>
+                <div class="cardTextBox">
+                    <h2>Footsteps Tram Tracks</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae facilis sequi tenetur,
+                        eligendi quod sunt nihil nisi quaerat animi cumque ea aperiam, totam nostrum </p>
+                </div>
+            </div>
+        </a>
+    </article>
+    <article>
+        <a href="CARD" class="cardContainer">
+            <img class="cardThumbnail" src="img/Heroimage.jpg" alt="">
+            <div class="cardDescriptionContainer">
+                <div class="cardNumberBox">
+                    <p>005</p>
+                </div>
+                <div class="cardTextBox">
+                    <h2>Footsteps Tram Tracks</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae facilis sequi tenetur,
+                        eligendi quod sunt nihil nisi quaerat animi cumque ea aperiam, totam nostrum </p>
+                </div>
+            </div>
+        </a>
+    </article>
+    <article>
+        <a href="CARD" class="cardContainer">
+            <img class="cardThumbnail" src="img/Heroimage.jpg" alt="">
+            <div class="cardDescriptionContainer">
+                <div class="cardNumberBox">
+                    <p>006</p>
+                </div>
+                <div class="cardTextBox">
+                    <h2>Footsteps Tram Tracks</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae facilis sequi tenetur,
+                        eligendi quod sunt nihil nisi quaerat animi cumque ea aperiam, totam nostrum </p>
+                </div>
+            </div>
+        </a>
+    </article>
+    <article>
+        <a href="CARD" class="cardContainer">
+            <img class="cardThumbnail" src="img/Heroimage.jpg" alt="">
+            <div class="cardDescriptionContainer">
+                <div class="cardNumberBox">
+                    <p>007</p>
+                </div>
+                <div class="cardTextBox">
+                    <h2>Footsteps Tram Tracks</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae facilis sequi tenetur,
+                        eligendi quod sunt nihil nisi quaerat animi cumque ea aperiam, totam nostrum </p>
+                </div>
+            </div>
+        </a>
+    </article>
+    <article>
+        <a href="CARD" class="cardContainer">
+            <img class="cardThumbnail" src="img/Heroimage.jpg" alt="">
+            <div class="cardDescriptionContainer">
+                <div class="cardNumberBox">
+                    <p>008</p>
+                </div>
+                <div class="cardTextBox">
+                    <h2>Footsteps Tram Tracks</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae facilis sequi tenetur,
+                        eligendi quod sunt nihil nisi quaerat animi cumque ea aperiam, totam nostrum </p>
+                </div>
+            </div>
+        </a>
+    </article>
+
+
+    <section id="navigateToAbout" class="sectionContainer">
+        <div class="sectionText">
+            <p><span>Thankyou for visiting my site.</span> I have been blown away by the feedback and reactions I have received.</p>
+            <p>This site was started basically to share my passion of sounds and recordings with an entire world of
+                people whom share a similar interest.</p>
+            <p>My interests initially began mid 2016(ish) with my first sound effects recordings. Recorded only with the
+                smartphone I had at the time, you would appreciate the quality was fairly raw, but was exactly enough to
+                spark the passion I share with so many others today. Along the way I have improved my recording
+                equipment so as to capture a more detailed sound quality. Now as my collection of recordings grows, I
+                share them with you.</p>
+            <p>I hope to continue to grow both this site and my collection of recordings, while sharing my passion for
+                sound.</p>
+        </div>
+    </section>
+
+
+    <article>
+        <a href="CARD" class="cardContainer">
+            <img class="cardThumbnail" src="img/Heroimage.jpg" alt="">
+            <div class="cardDescriptionContainer">
+                <div class="cardNumberBox">
+                    <p>001</p>
+                </div>
+                <div class="cardTextBox">
+                    <h2>Footsteps Tram Tracks</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae facilis sequi tenetur,
+                        eligendi quod sunt nihil nisi quaerat animi cumque ea aperiam, totam nostrum </p>
+                </div>
+            </div>
+        </a>
+        </article>
+        <article>
+            <a href="CARD" class="cardContainer">
+                <img class="cardThumbnail" src="img/Heroimage.jpg" alt="">
+                <div class="cardDescriptionContainer">
+                    <div class="cardNumberBox">
+                        <p>002</p>
+                    </div>
+                    <div class="cardTextBox">
+                        <h2>Footsteps Tram Tracks</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae facilis sequi
+                            tenetur,
+                            eligendi quod sunt nihil nisi quaerat animi cumque ea aperiam, totam nostrum </p>
+                    </div>
+                </div>
+            </a>
+        </article>
+        <article>
+            <a href="CARD" class="cardContainer">
+                <img class="cardThumbnail" src="img/Heroimage.jpg" alt="">
+                <div class="cardDescriptionContainer">
+                    <div class="cardNumberBox">
+                        <p>003</p>
+                    </div>
+                    <div class="cardTextBox">
+                        <h2>Footsteps Tram Tracks</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae facilis sequi
+                            tenetur,
+                            eligendi quod sunt nihil nisi quaerat animi cumque ea aperiam, totam nostrum </p>
+                    </div>
+                </div>
+            </a>
+        </article>
+        <article>
+            <a href="CARD" class="cardContainer">
+                <img class="cardThumbnail" src="img/Heroimage.jpg" alt="">
+                <div class="cardDescriptionContainer">
+                    <div class="cardNumberBox">
+                        <p>004</p>
+                    </div>
+                    <div class="cardTextBox">
+                        <h2>Footsteps Tram Tracks</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae facilis sequi
+                            tenetur,
+                            eligendi quod sunt nihil nisi quaerat animi cumque ea aperiam, totam nostrum </p>
+                    </div>
+                </div>
+            </a>
+        </article>
+        <article>
+            <a href="CARD" class="cardContainer">
+                <img class="cardThumbnail" src="img/Heroimage.jpg" alt="">
+                <div class="cardDescriptionContainer">
+                    <div class="cardNumberBox">
+                        <p>005</p>
+                    </div>
+                    <div class="cardTextBox">
+                        <h2>Footsteps Tram Tracks</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae facilis sequi
+                            tenetur,
+                            eligendi quod sunt nihil nisi quaerat animi cumque ea aperiam, totam nostrum </p>
+                    </div>
+                </div>
+            </a>
+        </article>
+        <article>
+            <a href="CARD" class="cardContainer">
+                <img class="cardThumbnail" src="img/Heroimage.jpg" alt="">
+                <div class="cardDescriptionContainer">
+                    <div class="cardNumberBox">
+                        <p>006</p>
+                    </div>
+                    <div class="cardTextBox">
+                        <h2>Footsteps Tram Tracks</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae facilis sequi
+                            tenetur,
+                            eligendi quod sunt nihil nisi quaerat animi cumque ea aperiam, totam nostrum </p>
+                    </div>
+                </div>
+            </a>
+        </article>
+        <article>
+            <a href="CARD" class="cardContainer">
+                <img class="cardThumbnail" src="img/Heroimage.jpg" alt="">
+                <div class="cardDescriptionContainer">
+                    <div class="cardNumberBox">
+                        <p>007</p>
+                    </div>
+                    <div class="cardTextBox">
+                        <h2>Footsteps Tram Tracks</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae facilis sequi
+                            tenetur,
+                            eligendi quod sunt nihil nisi quaerat animi cumque ea aperiam, totam nostrum </p>
+                    </div>
+                </div>
+            </a>
+        </article>
+        <article>
+            <a href="CARD" class="cardContainer">
+                <img class="cardThumbnail" src="img/Heroimage.jpg" alt="">
+                <div class="cardDescriptionContainer">
+                    <div class="cardNumberBox">
+                        <p>008</p>
+                    </div>
+                    <div class="cardTextBox">
+                        <h2>Footsteps Tram Tracks</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae facilis sequi
+                            tenetur,
+                            eligendi quod sunt nihil nisi quaerat animi cumque ea aperiam, totam nostrum </p>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+
+        <section class="sectionContainer">
+            <div class="sectionTitle">
+                <h2>Images, Video and Audio</h2>
+            </div>
+            <div class="sectionText">
+                <p>I physicially take the photos, capture the video and record the audio myself. Yep. The images used on
+                    this
+                    website <i>(exceptions noted below), </i>the video embeded and the audio have been taken by me using
+                    my
+                    camera / GoPro / recording equipment. I feel the images and video, just like the sound recordings,
+                    are such
+                    an important part of the experience to help reflect that time; that place.</p>
+                <p>I try to capture images which reflect the emotions of the location and in a way, the emotions of the
+                    day,
+                    whether be dark or joyfull. </p>
+                <p><span>PNG</span> - Edited with GIMP.</p>
+                <p><span>SVG</span> - Edited with SVG-Edit.</p>
+                <p><span>MP4</span> - Edited with Shotcut.</p>
+                <p><span>WAV</span> - Edited with Audacity</p>
+                <p><span><i>**<u>Exception</u></span>: Social Media Icons linking to accounts.</i></p>
+                <p><span><i>**<u>Exception</u></span>: Affiliate Link images.</i></p>
+                <p><span><i>**<u>Exception</u></span>: Software screen shots of linked software.</i></p>
+            </div>
+            <div class="sectionTitle">
+                <br><br><br>
+                <h2>HTML and CSS</h2>
+            </div>
+            <div class="sectionText">
+                <p>This site has been built by myself line by line, file by file. I scripted the site based on HTML and CSS. I specifically chose not to include JavaScript nor CSS Media Queries. Quite simply, do not need it. Flexbox in the CSS allows the site to be repsonsive / mobile friendly.</p>
+                <p>Scripting software used is Visual Studio Code</p>
+                <p>Building this site myself has allowed me the opportunitity to learn many concepts of HTML and CSS.
+                    Influences
+                    and guidance has mostly come from YouTube, web searches, trial and error. I am comfortable
+                    acknowledging there shall be errors in this site or that the script could have been written more efficient. Thats
+                    part of the learning experience. Maybe one day I may rebuild the site from scratch again with an improved style... Maybe?</p>
+                <p>Colours used in this site:</p>
+                <p><span>Black</span>: rgb(0, 0, 0)</p>
+                <p><span>White</span>: rgb(255, 255, 255)</p>
+                <p><span>Off White</span>: rgb(248, 248, 255)</p>
+                <p><span>OrangeRed</span>: rgb(255, 69, 0)</p>
+            </div>
+        </section>
+
+
+
+
 
 </body>
+<header class="footerContainer">
+    <a class="footerLogo" href="#navigateToTop">
+        <h1>CityUp Sounds</h1>
+    </a>
+    <nav class="footerMenu">
+        <a href="#navigateToAbout">About</a>
+        <a href="COOKIE">CookiePolicy</a>
+        <a href="PRIVACY">Privacy Policy</a>
+        <a href="SITEMAP">Site Map</a>
+    </nav>
+    <nav class="footerSocial">
+        <a href=""><i class="fa footerfa fa-twitter" aria-hidden="true"></i></a>
+        <a href=""><i class="fa footerfa fa-instagram" aria-hidden="true"></i></a>
+        <a href=""><i class="fa footerfa fa-youtube" aria-hidden="true"></i></a>
+        <a href=""><i class="fa footerfa fa-bandcamp" aria-hidden="true"></i></a>
+    </nav>
+    <div class="footerCopyright">
+        <a href="COPYRIGHT">Copyright &copy;2020</a>
+    </div>
+</header>
 
 </html>
