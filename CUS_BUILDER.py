@@ -208,7 +208,6 @@ for d in dictionary:
 append_footer_tags_index(page)
 append_close_html_tag(page)
 
-
 source = page
 target = source
 move_file(source,target)
@@ -301,25 +300,90 @@ move_file(source,target)
 
 
 
-# def append_build_cookie_page(x):
-#     with open(x,'a') as a:      
-#         a.write('<article class="compliance__article">\n')
-#         a.write('<div class="compliance__article__title">\n')
-#         a.write('<h1>Cookie Policy</h1>\n')
-#         a.write('</div>\n')
-#         a.write('<div class="compliance__article__content">\n')
-#         a.write('<p><b>'+ websiteName +'</b> is committed to providing quality services to you and this policy outlines the sites ongoing obligations to you in respect to cookies via this site.</p>\n')
-#         a.write('<h2>Cookies</h2>\n')
-#         a.write('<p>Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from a website that you visit and are stored on your computers hard drive. Third party applications such as Google Analytics and Social Media Sites may use cookies or other internet technologies to provide information on the use of this website and certain online products and services. Information in a cookie does not personally identify you. However, it provide details of the areas of the site which you have been browsing and the number of times that you have accessed the website. Cookies from this website are not used by us to collect or store personal information.</p>\n')
-#         a.write('<p>If you feel uncomfortable about the use of cookies, some browsers such as Chrome and FireFox allow the user to disable cookies all together from the settings / options menu.</p>\n')
-#         a.write('<h2>Policy Updates</h2>\n')
-#         a.write('<p>This Policy may change from time to time and is available on this website.</p>\n')
-#         a.write('<h2>Cookie Policy Complaints and Enquiries</h2>\n')
-#         a.write('<p>If you have any queries or complaints about our Cookie Policy please contact us at:</p>\n')
-#         a.write('<a href="'+ linkTwitter +'"><p><b>'+ linkTwitter +'</b></p>\n')
-#         a.write('</a>\n')
-#         a.write('</div>\n')
-#         a.write('</article>\n')
+
+# ==========================================================
+#                 ABOUT Page
+# ==========================================================
+valuePageTitle = 'About'
+page = linkAbout
+
+clr_existing_file(page)
+append_head_tags_page(page)
+append_NavBar(page)
+append_open_body_tag(page)
+
+with open(page,'a') as a:              
+    a.write('<article class="about">\n') 
+    a.write('<h1>About</h1>\n')
+    a.write('<p>Thankyou for visiting my site. I have been blown away by the feedback and reactions I have received.</p>\n')
+    a.write('<p>This site was started basically to share my passion of sounds and recordings with an entire world of people whom share a similar interest.</p>\n')
+    a.write('<p>My interests initially began mid 2016(ish) with my first sound effects recordings. Recorded only with the smartphone I had at the time, you would appreciate the quality was fairly raw, but was exactly enough to spark the passion I share with so many others today. Along the way I have improved my recording equipment so as to capture a more detailed sound quality. Now as my collection of recordings grows, I share them with you.</p>\n')
+    a.write('<p>I hope to continue to grow both this site and my collection of recordings, while sharing my passion for sound.</p>\n')
+    a.write('<h2>Contact</h2>\n')
+    a.write('<p>The best way to get in contact is via the following links:</p>\n')
+    a.write('<div class="about_social">\n')
+    a.write('<a href="https://twitter.com/CityupSounds"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>\n')
+    a.write('<a href="https://www.instagram.com/cityupsounds/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>\n')
+    a.write('<a href="https://cityupsounds.bandcamp.com/"><i class="fa fa-bandcamp" aria-hidden="true"></i><span>Bandcamp</span></a>\n')
+    a.write('</div>\n')
+    a.write('<h2>Images, Video and Audio</h2>\n')
+    a.write('<p>I physicially take the photos, capture the video and record the audio myself. Yep. The images used on this website <i>(exceptions noted below), </i>the video embeded and the audio have been taken by me using my camera / GoPro / recording equipment. I feel the images and video, just like the sound recordings, are such an important part of the experience to help reflect that time; that place.</p>\n')
+    a.write('<p>I try to capture images which reflect the emotions of the location and in a way, the emotions of the day, whether be dark or joyfull. </p>\n')
+    a.write('<p class="about_indent">PNG - Mostly edited using GIMP.</p>\n')
+    a.write('<p class="about_indent">SVG - Mostly edited using SVG-Edit.</p>\n')
+    a.write('<p class="about_indent">MP4 - Edited using Shotcut.</p>\n')
+    a.write('<p class="about_indent">WAV and MP3 - Mostly edited using Audacity</p>\n')
+    a.write('<p><i>**<u> Exception</u>: Social Media Icons linking to accounts.</i></p>\n')
+    a.write('<p><i>**<u> Exception</u>: Affiliate Link images.</i></p>\n')
+    a.write('<p><i>**<u> Exception</u>: Software screen shots of linked software.</i></p>\n')
+    a.write('<h2>HTML and CSS</h2>\n')
+    a.write('<p>This site has been built by myself line by line, file by file. I scripted the site based on HTML and CSS. I specifically chose not to include JavaScript. Quite simply, I do not need it. Flexbox in the CSS allows the site to be repsonsive / mobile friendly.</p>\n')
+    a.write('<p>Scripting software used is Visual Studio Code</p>\n')
+    a.write('<p>Building this site myself has allowed me the opportunitity to learn many concepts of HTML and CSS. Influences and guidance has mostly come from YouTube, web searches, trial and error. I am comfortable acknowledging there shall be errors in this site or that the script could have been   written more efficient. Thats part of the learning experience. Maybe one day I may rebuild the site from scratch again with an improved style... Maybe?</p>\n')
+    a.write('<p>Colours used in this site:</p>\n')
+    a.write('<p class="about_indent">Black: rgb(0, 0, 0)</p>\n')
+    a.write('<p class="about_indent">White: rgb(255, 255, 255)</p>\n')
+    a.write('<p class="about_indent">Orangered: rgb(255, 69, 0)</p>\n')
+    a.write('</article>\n')
+
+append_footer_tags(page)
+append_close_html_tag(page)
+
+source = page
+target = './pages/' + source
+move_file(source,target)
+
+
+# ==========================================================
+#                 COOKIE POLICY Page
+# ==========================================================
+valuePageTitle = 'Cookie Policy'
+page = linkCookie
+
+clr_existing_file(page)
+append_head_tags_page(page)
+append_NavBar(page)
+append_open_body_tag(page)
+
+with open(page,'a') as a:      
+    a.write('<article class="cookie">\n')    
+    a.write('<h1>Cookie Policy</h1>\n')      
+    a.write('<p><b>'+ websiteName +'</b> is committed to providing quality services to you and this policy outlines the sites ongoing obligations to you in respect to cookies via this site.</p>\n')
+    a.write('<h2>Cookies</h2>\n')
+    a.write('<p>Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from a website that you visit and are stored on your computers hard drive. Third party applications such as Google Analytics and Social Media Sites may use cookies or other internet technologies to provide information on the use of this website and certain online products and services. Information in a cookie does not personally identify you. However, it provide details of the areas of the site which you have been browsing and the number of times that you have accessed the website. Cookies from this website are not used by us to collect or store personal information.</p>\n')
+    a.write('<p>If you feel uncomfortable about the use of cookies, some browsers such as Chrome and FireFox allow the user to disable cookies all together from the settings / options menu.</p>\n')
+    a.write('<h2>Policy Updates</h2>\n')
+    a.write('<p>This Policy may change from time to time and is available on this website.</p>\n')
+    a.write('<h2>Cookie Policy Complaints and Enquiries</h2>\n')
+    a.write('<p>If you have any queries or complaints about our Cookie Policy please contact us at:</p>\n')
+    a.write('<a href="'+ linkTwitter +'"><p><b>'+ linkTwitter +'</b></p></a>\n')   
+    a.write('</article>\n')
+append_footer_tags(page)
+append_close_html_tag(page)
+
+source = page
+target = './pages/' + source
+move_file(source,target)
 
        
 # ==========================================================
@@ -572,47 +636,6 @@ move_file(source,target)
 # source = page
 # target = 'pages/' + source
 # move_file(source,target)
-
-
-# ================================
-# special page: cookie_policy.html
-# ================================
-# valuePageTitle = 'Cookie Policy'
-# page = linkFooterCookie
-# execute_build_compliance_page_ABOVE(page)
-# append_build_cookie_page(page)
-# execute_build_compliance_page_BELOW(page)
-# source = page
-# target = 'pages/' + source
-# move_file(source,target)
-
-
-# =================================
-# special page: privacy_policy.html
-# =================================
-# valuePageTitle = 'Privacy Policy'
-# page = linkFooterPrivacy
-# execute_build_compliance_page_ABOVE(page)
-# append_build_privacy_page(page)
-# execute_build_compliance_page_BELOW(page)
-# source = page
-# target = 'pages/' + source
-# move_file(source,target)
-
-
-
-# # ========================
-# # special page: about.html
-# # ========================
-# valuePageTitle = 'About'
-# page = linkNavMenuItem2
-# execute_build_compliance_page_ABOVE(page)
-# append_build_about_page(page)
-# execute_build_compliance_page_BELOW(page)
-# source = page
-# target = 'pages/' + source
-# move_file(source,target)
-
 
 
 

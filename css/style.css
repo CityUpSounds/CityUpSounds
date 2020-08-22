@@ -241,3 +241,76 @@ html {
     margin-top: 3rem;
     font-size: 0.8rem;
 }
+
+/* cookie */
+.cookie{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 5rem;
+    text-align: justify;
+}
+.cookie h1{
+    color: black;
+    margin-bottom: 1rem;
+}
+.cookie h2{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.cookie p{
+    margin-bottom: 0.5rem;
+}
+.cookie a{
+    color: orangered;
+    text-decoration: none;
+}
+.cookie a:hover{
+    color: black;       
+}
+
+/* about */
+.about{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 5rem;
+    text-align: justify;
+}
+.about h1{
+    color: black;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.about h2{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.about p{
+    margin-bottom: 0.5rem;
+}
+.about a{
+    color: orangered;
+    text-decoration: none;
+}
+.about a:hover{
+    color: black;       
+}
+.about_indent{
+    margin-left: 3rem;
+}
+.about_social{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+.about_social span{
+    margin-left: 1rem;
+}
