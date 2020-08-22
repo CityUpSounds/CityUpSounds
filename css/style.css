@@ -174,11 +174,70 @@ html {
     padding-bottom: 1rem;
     width: 100%;
 }
-
-
-
 .footerfa{
     font-size: 3rem;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+/* sitemap */
+.sitemap{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+.sitemap h1{
+    color: black;
+    margin-bottom: 1rem;
+}
+.sitemap a{
+    color: black;
+    text-decoration: none;
+}
+.sitemap a:hover{
+    color: orangered;
+    background-color: black;
+    scale: 115%;    
+}
+.sitemap_indent{
+    margin-left: 3rem;
+}
+
+/* privacy */
+.privacy{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 5rem;
+    text-align: justify;
+}
+.privacy h1{
+    color: black;
+    margin-bottom: 1rem;
+}
+.privacy h2{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.privacy p{
+    margin-bottom: 0.5rem;
+}
+.privacy a{
+    color: orangered;
+    text-decoration: none;
+}
+.privacy a:hover{
+    color: black;       
+}
+.privacy_indent{
+    margin-left: 3rem;
+}
+#privacy_template_link{
+    margin-top: 3rem;
+    font-size: 0.8rem;
 }
