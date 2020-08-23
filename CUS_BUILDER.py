@@ -205,6 +205,7 @@ for d in dictionary:
         a.write('</a>\n')
         a.write('</article>\n')
 
+append_close_body_tag(page)
 append_footer_tags_index(page)
 append_close_html_tag(page)
 
@@ -216,86 +217,204 @@ move_file(source,target)
 # ==========================================================
 #                 BUILD ARTICLE Page
 # ==========================================================
+dictionary = data
 
-# for d in dictionary: 
+for d in dictionary: 
     
-#     try: valuePageName = dictionary[d]['pageName'] + '.html'
-#     except: 
-#         print('CRITICAL FAIL = Page needs a Name..... script TERMINATED')
-#         print('CRITICAL FAIL = Page needs a Name..... script TERMINATED')
-#         print('CRITICAL FAIL = Page needs a Name..... script TERMINATED')
-#         exit()
-#     # ================
-#     try:        
-#         valuePageTitle = dictionary[d]['pageTitle']
-#     except: 
-#         valuePageTitle = ""
-#         print('Page Title has ZERO value')
-#     # ================
-#     try: 
-#         valuePageImagePath = dictionary[d]['pageImage']
-#     except: 
-#         valuePageImagePath = ""
-#         print('Page Image has ZERO value')
-#     # ================
-#     try: 
-#         valuePageVideoPath = dictionary[d]['pageVideo']
-#     except: 
-#         valuePageVideoPath = ""
-#         print('Page Video has ZERO value')
-#     # ================    
-#     try: valueLocation = dictionary[d]['location']
-#     except: 
-#         valueLocation  = ""
-#         print('Location has ZERO value')
-#     # ================
-#     try: valueAudioFormat = dictionary[d]['audioFormat']
-#     except: 
-#         valueAudioFormat = ""
-#         print('AudioFormat has ZERO value')
-#     # ================
-#     try: valueDuration = dictionary[d]['duration']
-#     except: 
-#         valueDuration = ""
-#         print('Duration has ZERO value')
-#     # ================
-#     try: valueRecorder = dictionary[d]['recorder']
-#     except: 
-#         valueRecorder = ""
-#         print('Recorder has ZERO value')
-#     # ================
-#     try: valueMicrophone = dictionary[d]['microphone']
-#     except: 
-#         valueMicrophone = ""
-#         print('Microphone has ZERO value')
-#         # ================
-#     try: valueAudioEditing = dictionary[d]['audioEditing']
-#     except: 
-#         valueAudioEditing = ""
-#         print('Audio Editing has ZERO value')
-#     # ================
-#     try: valueVideoAvailable = dictionary[d]['videoAvailable']
-#     except: 
-#         valueVideoAvailable = ""
-#         print('VideoAvailable has ZERO value')
-#     # ================
-#     try: valueDelivery = dictionary[d]['delivery'] 
-#     except: 
-#         valueDelivery = ""
-#         print('Delivery has ZERO value')
-#     # ================    
-#     try: 
-#         valueDescription = dictionary[d]['description']
-#         valueDescription = valueDescription.replace('\n', '</p><p>')
-#     except: 
-#         valueDescription = ""
-#         print('Description has ZERO value')
+    try: valuePageName = dictionary[d]['pageName'] + '.html'
+    except: 
+        print('CRITICAL FAIL = Page needs a Name..... script TERMINATED')
+        print('CRITICAL FAIL = Page needs a Name..... script TERMINATED')
+        print('CRITICAL FAIL = Page needs a Name..... script TERMINATED')
+        exit()
+    # ================
+    try:        
+        valuePageTitle = dictionary[d]['pageTitle']
+    except: 
+        valuePageTitle = ""
+        print('Page Title has ZERO value')
+    # ================
+    try: 
+        valuePageImagePath = dictionary[d]['pageImage']
+    except: 
+        valuePageImagePath = ""
+        print('Page Image has ZERO value')
+    # ================
+    try: 
+        valuePageVideoPath = dictionary[d]['pageVideo']
+    except: 
+        valuePageVideoPath = ""
+        print('Page Video has ZERO value')
+    # ================    
+    try: valueLocation = dictionary[d]['location']
+    except: 
+        valueLocation  = ""
+        print('Location has ZERO value')
+    # ================
+    try: valueAudioFormat = dictionary[d]['audioFormat']
+    except: 
+        valueAudioFormat = ""
+        print('AudioFormat has ZERO value')
+    # ================
+    try: valueDuration = dictionary[d]['duration']
+    except: 
+        valueDuration = ""
+        print('Duration has ZERO value')
+    # ================
+    try: valueRecorder = dictionary[d]['recorder']
+    except: 
+        valueRecorder = ""
+        print('Recorder has ZERO value')
+    # ================
+    try: valueMicrophone = dictionary[d]['microphone']
+    except: 
+        valueMicrophone = ""
+        print('Microphone has ZERO value')
+    # ================
+    try: valueAudioEditing = dictionary[d]['audioEditing']
+    except: 
+        valueAudioEditing = ""
+        print('Audio Editing has ZERO value')
+    # ================
+    try: valueVideoAvailable = dictionary[d]['videoAvailable']
+    except: 
+        valueVideoAvailable = ""
+        print('VideoAvailable has ZERO value')
+    # ================
+    try: valueDelivery = dictionary[d]['delivery'] 
+    except: 
+        valueDelivery = ""
+        print('Delivery has ZERO value')
+    # ================    
+    try: 
+        valueDescription = dictionary[d]['description']
+        valueDescription = valueDescription.replace('\n', '</p><p>')
+    except: 
+        valueDescription = ""
+        print('Description has ZERO value')
+        
+    
+    page = valuePageName
+    
+    clr_existing_file(page)
+    append_head_tags_page(page)
+    append_NavBar(page)
+    append_open_body_tag(page)
+    
+    with open(page,'a') as a:  
+        a.write('<article class="page">\n')
+        a.write('<h1>Footsteps - Bush Tracks</h1>\n')
+        a.write('<section class="page_detailsIMG">\n')
+        a.write('<div class="page_details">\n')
+        a.write('<p><span>Location: </span>Royal National Park, Sydney</p>\n')
+        a.write('<p><span>Format: </span>24 bit / 96-192 kHz</p>\n')
+        a.write('<p><span>Duration: </span>2 min 38 sec</p>\n')
+        a.write('<p><span>Recorder: </span>Android Phone</p>\n')
+        a.write('<p><span>Microphone: </span>Onboard Microphone</p>\n')
+        a.write('<p><span>Audio Editing: </span>Audacity</p>\n')
+        a.write('<p><span>Video Available: </span>Uploaded to YouTube</p>\n')
+        a.write('<p><span>Delivery: </span>Digital download on Bandcamp</p>\n')
+        a.write('</div>\n')
+        a.write('<div class="page_image">\n')
+        a.write('<img src="../img/002.jpg" alt="">\n')
+        a.write('</div>\n')
+        a.write('</section>\n')
+        a.write('<div class="page__article__text">\n')
+        a.write('<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur similique nostrum maxime accusamus obcaecati doloribus adipisci recusandae dignissimos autem, eius velit distinctio facere vitae dolore voluptatibus laudantium, quisquam saepe ipsa. Omnis sunt corporis eligendi incidunt molestiae odit! Quasi, qui placeat.</p>\n')
+        a.write('<p>Quasi consequuntur laborum accusamus necessitatibus alias unde est magni laudantium repellendus quibusdam asperiores officia vero eos suscipit adipisci doloribus, optio provident at! Quae eius doloribus nemo sit delectus recusandae est, nobis et tempora nam eum assumenda eaque corrupti dignissimos, porro dolores praesentium quas hic, nihil error consequatur. Veritatis dolorum labore ipsa odio vero, eaque a, iusto adipisci non aliquam porro quaerat ex sapiente harum, tempora sint voluptatum dolores maiores? Delectus deserunt cum ea officiis. Ab rem blanditiis provident eligendi iste.</p>\n')
+        a.write('</div>\n')
+        a.write('<section class="page_videoDL">\n')
+        a.write('<div class="page_video_container">\n')
+        a.write('<div class="page_video">\n')
+        a.write('<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/5bsqGX3Inpw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\n')
+        a.write('</div>\n')
+        a.write('</div>\n')
+        a.write('<div class="page_DL">\n')
+        a.write('<a class="page_btn" href="DOWNLOAD">Download Audio</a>\n')
+        a.write('</div>\n')
+        a.write('</section>\n')
+        a.write('</article>\n')
+        a.write('<section class="page_products_container">\n')
+        a.write('<div class="page_products_image_container">\n')
+        a.write('<a href="" class="page_products_image">\n')
+        a.write('<img src="../img/zoom_shotgun_microphone.jpg" alt="">\n')
+        a.write('</a>\n')
+        a.write('<a href="" class="page_products_image">\n')
+        a.write('<img src="../img/zoom_h6.jpg" alt="">\n')
+        a.write('</a>\n')
+        a.write('<a href="" class="page_products_image">\n')
+        a.write('<img src="../img/zoom_accessories.jpg" alt="">\n')
+        a.write('</a>\n')
+        a.write('</div>\n')
+        a.write('<div class="page_products_disclosure_container">\n')
+        a.write('<p>DISCLAIMER: This page contains affiliate links, which means that if you follow one of my product links or use a discount code, please be aware that I may recieve a commission.</p>\n')
+        a.write('<p>Id also like to say THANKYOU for the support if you do.</p>\n')
+        a.write('<p>I really appreciate it. </p>\n')
+        a.write('</div>\n')
+        a.write('</section>\n')
+        a.write('<section class="mainContainer">\n')
+
+        
+
+    articleNumber = 0 
+    
+    while articleNumber < 3:  
+        articleNumber = articleNumber + 1
+        d='article'+str(articleNumber)                 
+        try: 
+            valuePageName = dictionary[d]['pageName'] + '.html'
+            articlePath = valuePageName
+        except: 
+            print('CRITICAL FAIL = Article '+ str(articleNumber) +' needs a Name..... script TERMINATED')
+            exit()
+        # ================
+        try: 
+            valuePageTitle = dictionary[d]['pageTitle']
+        except: 
+            valuePageTitle = ""
+            print('Article '+ articleNumber +' Page Title has ZERO value')
+        # ================
+        try: 
+            valuePageImagePath = './img/'+ dictionary[d]['pageImage']
+        except: 
+            valuePageImagePath = ""
+            print('Article '+ articleNumber +' Page Image has ZERO value')
+        # ================   
+        try: 
+            valueDescription = dictionary[d]['description']
+            valueDescription = valueDescription.replace('\n', '</p><p>')
+            valueDescription = valueDescription[:120]+'....'
+        except: 
+            valueDescription = ""
+            print('Article '+ articleNumber +' Description has ZERO value')
+    
+        
+        with open(page,'a') as a:  
+            a.write('<article>\n')
+            a.write('<a href="'+ articlePath +'" class="cardContainer" title="'+ valuePageTitle +'">\n')
+            a.write('<img class="cardThumbnail" src=".'+ valuePageImagePath +'" alt="">\n')
+            a.write('<div class="cardDescriptionContainer">\n')
+            a.write('<div class="cardNumberBox">\n')
+            a.write('<p>{:03}</p>\n'.format(articleNumber))
+            a.write('</div>\n')
+            a.write('<div class="cardTextBox">\n')
+            a.write('<h2>'+ valuePageTitle +'</h2>\n')
+            a.write('<p>'+ valueDescription +'</p>\n')
+            a.write('</div>\n')
+            a.write('</div>\n')
+            a.write('</a>\n')
+            a.write('</article>\n')
+    
+    with open(page,'a') as a: 
+        a.write('</section>\n')
    
-    
-#     execute_build_article_page(valuePageName)
-#     source = valuePageName
-#     target = 'pages/' + source
-#     move_file(source,target)
+    append_close_body_tag(page)
+    append_footer_tags(page)
+    append_close_html_tag(page)
+
+    source = page
+    target = './pages/' + source
+    move_file(source,target)
     
 
 
@@ -346,6 +465,7 @@ with open(page,'a') as a:
     a.write('<p class="about_indent">Orangered: rgb(255, 69, 0)</p>\n')
     a.write('</article>\n')
 
+append_close_body_tag(page)
 append_footer_tags(page)
 append_close_html_tag(page)
 
@@ -378,6 +498,8 @@ with open(page,'a') as a:
     a.write('<p>If you have any queries or complaints about our Cookie Policy please contact us at:</p>\n')
     a.write('<a href="'+ linkTwitter +'"><p><b>'+ linkTwitter +'</b></p></a>\n')   
     a.write('</article>\n')
+
+append_close_body_tag(page)
 append_footer_tags(page)
 append_close_html_tag(page)
 
@@ -455,6 +577,8 @@ with open(page,'a') as a:
     a.write('<p>Privacy Template</p>\n')
     a.write('</a>\n')
     a.write('</article>\n')
+
+append_close_body_tag(page)
 append_footer_tags(page)
 append_close_html_tag(page)
 
@@ -513,6 +637,7 @@ with open(page,'a') as a:
     a.write('<a href="'+ linkBandcamp  +'">Bandcamp</a>\n')  
     a.write('</div>\n') 
 
+append_close_body_tag(page)
 append_footer_tags(page)
 append_close_html_tag(page)
 
