@@ -144,6 +144,17 @@ linkBandcamp = 'https://cityupsounds.bandcamp.com/'
 
 github_repo = 'cityupsounds/'
 
+productOneName = 'Zoom H6 Recorder'
+productOneImagePath = '../img/zoom_h6.jpg'
+productOneURL = 'Product 1'
+
+productTwoName = 'Zoom Shotgun Microphone'
+productTwoImagePath = '../img/zoom_shotgun_microphone.jpg'
+productTwoURL = 'Product 2'
+
+productThreeName = 'Zoom Accessories Pack'
+productThreeImagePath = '../img/zoom_accessories.jpg'
+productThreeURL = 'Product 3'
 
 
 # ==========================================================
@@ -303,30 +314,29 @@ for d in dictionary:
     
     with open(page,'a') as a:  
         a.write('<article class="page">\n')
-        a.write('<h1>Footsteps - Bush Tracks</h1>\n')
+        a.write('<h1>'+ valuePageTitle +'</h1>\n')
         a.write('<section class="page_detailsIMG">\n')
         a.write('<div class="page_details">\n')
-        a.write('<p><span>Location: </span>Royal National Park, Sydney</p>\n')
-        a.write('<p><span>Format: </span>24 bit / 96-192 kHz</p>\n')
-        a.write('<p><span>Duration: </span>2 min 38 sec</p>\n')
-        a.write('<p><span>Recorder: </span>Android Phone</p>\n')
-        a.write('<p><span>Microphone: </span>Onboard Microphone</p>\n')
-        a.write('<p><span>Audio Editing: </span>Audacity</p>\n')
-        a.write('<p><span>Video Available: </span>Uploaded to YouTube</p>\n')
-        a.write('<p><span>Delivery: </span>Digital download on Bandcamp</p>\n')
+        a.write('<p><span>Location: </span>'+ valueLocation +'</p>\n')
+        a.write('<p><span>Format: </span>'+ valueAudioFormat +'</p>\n')
+        a.write('<p><span>Duration: </span>'+ valueDuration +'</p>\n')
+        a.write('<p><span>Recorder: </span>'+ valueRecorder +'</p>\n')
+        a.write('<p><span>Microphone: </span>'+ valueMicrophone +'</p>\n')
+        a.write('<p><span>Audio Editing: </span>'+ valueAudioEditing +'</p>\n')
+        a.write('<p><span>Video Available: </span>'+ valueVideoAvailable +'</p>\n')
+        a.write('<p><span>Delivery: </span>'+ valueDelivery +'</p>\n')
         a.write('</div>\n')
         a.write('<div class="page_image">\n')
-        a.write('<img src="../img/002.jpg" alt="">\n')
+        a.write('<img src="../img/'+ valuePageImagePath +'" alt="">\n')
         a.write('</div>\n')
         a.write('</section>\n')
         a.write('<div class="page__article__text">\n')
-        a.write('<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur similique nostrum maxime accusamus obcaecati doloribus adipisci recusandae dignissimos autem, eius velit distinctio facere vitae dolore voluptatibus laudantium, quisquam saepe ipsa. Omnis sunt corporis eligendi incidunt molestiae odit! Quasi, qui placeat.</p>\n')
-        a.write('<p>Quasi consequuntur laborum accusamus necessitatibus alias unde est magni laudantium repellendus quibusdam asperiores officia vero eos suscipit adipisci doloribus, optio provident at! Quae eius doloribus nemo sit delectus recusandae est, nobis et tempora nam eum assumenda eaque corrupti dignissimos, porro dolores praesentium quas hic, nihil error consequatur. Veritatis dolorum labore ipsa odio vero, eaque a, iusto adipisci non aliquam porro quaerat ex sapiente harum, tempora sint voluptatum dolores maiores? Delectus deserunt cum ea officiis. Ab rem blanditiis provident eligendi iste.</p>\n')
+        a.write('<p>'+ valueDescription +'</p>\n')
         a.write('</div>\n')
         a.write('<section class="page_videoDL">\n')
         a.write('<div class="page_video_container">\n')
         a.write('<div class="page_video">\n')
-        a.write('<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/5bsqGX3Inpw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\n')
+        a.write('<iframe loading="lazy" width="560" height="315" src="'+ valuePageVideoPath +'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\n')
         a.write('</div>\n')
         a.write('</div>\n')
         a.write('<div class="page_DL">\n')
@@ -336,14 +346,14 @@ for d in dictionary:
         a.write('</article>\n')
         a.write('<section class="page_products_container">\n')
         a.write('<div class="page_products_image_container">\n')
-        a.write('<a href="" class="page_products_image">\n')
-        a.write('<img src="../img/zoom_shotgun_microphone.jpg" alt="">\n')
+        a.write('<a href="'+ productTwoURL +'" class="page_products_image">\n')
+        a.write('<img src="'+ productTwoImagePath +'" alt="'+ productTwoName +'">\n')
         a.write('</a>\n')
-        a.write('<a href="" class="page_products_image">\n')
-        a.write('<img src="../img/zoom_h6.jpg" alt="">\n')
+        a.write('<a href="'+ productOneURL +'" class="page_products_image">\n')
+        a.write('<img src="'+ productOneImagePath +'" alt="'+ productOneName +'">\n')
         a.write('</a>\n')
-        a.write('<a href="" class="page_products_image">\n')
-        a.write('<img src="../img/zoom_accessories.jpg" alt="">\n')
+        a.write('<a href="'+ productThreeURL +'" class="page_products_image">\n')
+        a.write('<img src="'+ productThreeImagePath +'" alt="'+ productThreeName +'">\n')
         a.write('</a>\n')
         a.write('</div>\n')
         a.write('<div class="page_products_disclosure_container">\n')
@@ -434,7 +444,7 @@ append_open_body_tag(page)
 with open(page,'a') as a:              
     a.write('<article class="about">\n') 
     a.write('<h1>About</h1>\n')
-    a.write('<p>Thankyou for visiting my site. I have been blown away by the feedback and reactions I have received.</p>\n')
+    a.write('<p>Thankyou for visiting my site. I have been blown away by the supportive feedback and reactions I have received.</p>\n')
     a.write('<p>This site was started basically to share my passion of sounds and recordings with an entire world of people whom share a similar interest.</p>\n')
     a.write('<p>My interests initially began mid 2016(ish) with my first sound effects recordings. Recorded only with the smartphone I had at the time, you would appreciate the quality was fairly raw, but was exactly enough to spark the passion I share with so many others today. Along the way I have improved my recording equipment so as to capture a more detailed sound quality. Now as my collection of recordings grows, I share them with you.</p>\n')
     a.write('<p>I hope to continue to grow both this site and my collection of recordings, while sharing my passion for sound.</p>\n')
@@ -446,7 +456,7 @@ with open(page,'a') as a:
     a.write('<a href="https://cityupsounds.bandcamp.com/"><i class="fa fa-bandcamp" aria-hidden="true"></i><span>Bandcamp</span></a>\n')
     a.write('</div>\n')
     a.write('<h2>Images, Video and Audio</h2>\n')
-    a.write('<p>I physicially take the photos, capture the video and record the audio myself. Yep. The images used on this website <i>(exceptions noted below), </i>the video embeded and the audio have been taken by me using my camera / GoPro / recording equipment. I feel the images and video, just like the sound recordings, are such an important part of the experience to help reflect that time; that place.</p>\n')
+    a.write('<p>I physicially take the photos, capture the video and record the audio myself. Yep. The images used on this website <i>(exceptions noted below), </i>the video embeded and the audio have been taken by me using my camera / recording equipment. I feel the images and video, just like the sound recordings, are an important part of the experience to help reflect that time; that place.</p>\n')
     a.write('<p>I try to capture images which reflect the emotions of the location and in a way, the emotions of the day, whether be dark or joyfull. </p>\n')
     a.write('<p class="about_indent">PNG - Mostly edited using GIMP.</p>\n')
     a.write('<p class="about_indent">SVG - Mostly edited using SVG-Edit.</p>\n')
@@ -456,9 +466,9 @@ with open(page,'a') as a:
     a.write('<p><i>**<u> Exception</u>: Affiliate Link images.</i></p>\n')
     a.write('<p><i>**<u> Exception</u>: Software screen shots of linked software.</i></p>\n')
     a.write('<h2>HTML and CSS</h2>\n')
-    a.write('<p>This site has been built by myself line by line, file by file. I scripted the site based on HTML and CSS. I specifically chose not to include JavaScript. Quite simply, I do not need it. Flexbox in the CSS allows the site to be repsonsive / mobile friendly.</p>\n')
+    a.write('<p>This site has been built by myself. I scripted the site based on HTML, CSS and Python. I specifically chose not to include JavaScript in my coding but JavaScript is used via third party scripts e.g. Google Analytics. Flexbox in the CSS allows the site to be repsonsive / mobile friendly.</p>\n')
     a.write('<p>Scripting software used is Visual Studio Code</p>\n')
-    a.write('<p>Building this site myself has allowed me the opportunitity to learn many concepts of HTML and CSS. Influences and guidance has mostly come from YouTube, web searches, trial and error. I am comfortable acknowledging there shall be errors in this site or that the script could have been   written more efficient. Thats part of the learning experience. Maybe one day I may rebuild the site from scratch again with an improved style... Maybe?</p>\n')
+    a.write('<p>Building this site myself has allowed me the opportunitity to learn many concepts of HTML, CSS and Python. Influences and guidance has mostly come from YouTube, web searches, trial and error. I am comfortable acknowledging there shall be errors in this site or that the script could have been   written more efficient. Thats part of the learning experience. Maybe one day I may rebuild the site from scratch again with an improved style... Maybe?</p>\n')
     a.write('<p>Colours used in this site:</p>\n')
     a.write('<p class="about_indent">Black: rgb(0, 0, 0)</p>\n')
     a.write('<p class="about_indent">White: rgb(255, 255, 255)</p>\n')
