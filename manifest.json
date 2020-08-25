@@ -1,0 +1,49 @@
+{
+    "name": "CityUp Sounds",
+    "short_name": "CityUp Sounds",
+    "start_url": "https://cityupsounds.github.io/",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "background_color": "#ff4500",
+    "description": "A collection of ambient sound recordings and sound effects. Sharing my passion of sounds and recordings with whom share a similar interest.",
+
+    "icons": [{
+      "src": "images/touch/homescreen48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    }, {
+      "src": "images/touch/homescreen72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }, {
+      "src": "images/touch/homescreen96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }, {
+      "src": "images/touch/homescreen144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "images/touch/homescreen168.png",
+      "sizes": "168x168",
+      "type": "image/png"
+    }, {
+      "src": "images/touch/homescreen192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }],
+    
+
+    "screenshots" : [
+        {
+          "src": "screenshot1.webp",
+          "sizes": "1280x720",
+          "type": "image/webp"
+        },
+        {
+          "src": "screenshot2.webp",
+          "sizes": "1280x720",
+          "type": "image/webp"
+        }
+      ]
+  }

@@ -16,12 +16,64 @@ def append_head_tags_page_index(x):
         a.write('<html lang="en">\n')
         a.write('<head>\n')
         a.write('<meta charset="UTF-8">\n')
-        a.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">\n')
-        a.write('<title>'+ valuePageTitle +' | '+ websiteName +'</title>\n')
-        a.write('<link rel="shortcut icon" href="favicon.png" type="image/x-icon">\n')
+        a.write('<meta name="viewport"    content="width=device-width, initial-scale=1.0">\n')
+        a.write('<title>CityUp Sounds | A collection of ambient sound recordings and sound effects.</title>\n') 
+        a.write('<meta name="robots"      content="index, follow">\n')
+        a.write('<meta name="description" content="A collection of ambient sound recordings and sound effects. Sharing my passion of sounds and recordings with whom share a similar interest.">\n')
+        a.write('<meta name="googlebot"   content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">\n')
+        a.write('<meta name="bingbot"     content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">\n')
+        a.write('<link rel="canonical"  href="'+ websiteURL +'">\n')        
         a.write('<link rel="stylesheet" href="'+ cssCloudflare +'">\n')
         a.write('<link rel="stylesheet" href="'+ cssStylePath +'">\n')
-        a.write('</head>\n')    
+        a.write('<meta property="og:locale"      content="en_US">\n')
+        a.write('<meta property="og:type"        content="website">\n')
+        a.write('<meta property="og:title"       content="CityUp Sounds | A collection of ambient sound recordings and sound effects.">\n')
+        a.write('<meta property="og:description" content="A collection of ambient sound recordings and sound effects. Sharing my passion of sounds and recordings with whom share a similar interest.">\n')
+        a.write('<meta property="og:url"         content="'+ websiteURL +'">\n')
+        a.write('<meta property="og:site_name"   content="'+ websiteName +'">\n')
+        a.write('<meta property="og:see_also" content="https://cityupsounds.github.io/pages/Footstep_Tram_Tracks.html">\n')
+        a.write('<meta property="og:see_also" content="https://cityupsounds.github.io/pages/Footstep_Bush_Tracks.html">\n')
+
+        a.write('<meta property="og:image"            content="https://.......jpg" />\n')
+        a.write('<meta property="og:image:secure_url" content="https://.......jpg">\n')
+        a.write('<meta property="og:image:type"       content="image/jpeg">\n')
+        a.write('<meta property="og:image:width"      content="">\n')
+        a.write('<meta property="og:image:height"     content="">\n')
+        a.write('<meta property="og:video"            content="https://.......mp4">\n')
+        a.write('<meta property="og:video:secure_url" content="https://.......mp4">\n')
+        a.write('<meta property="og:video:type"       content="video/mp4.">\n')
+        a.write('<meta property="og:video:width"      content="">\n')
+        a.write('<meta property="og:video:height"     content="">\n')
+        a.write('<meta name="twitter:card" content="summary_large_image">\n')
+        a.write('<meta name="twitter:creator" content="'+ metaTwitterHandle +'">\n')
+        a.write('<meta name="twitter:site" content="'+ metaTwitterHandle +'">\n')
+        a.write('<meta name="twitter:title" content="CityUp Sounds | A collection of ambient sound recordings and sound effects.">\n')
+        a.write('<meta name="twitter:url" content="'+ websiteURL +'">\n')
+        a.write('<meta name="twitter:description" content="A collection of ambient sound recordings and sound effects. Sharing my passion of sounds and recordings with whom share a similar interest.">\n')
+        a.write('<meta name="twitter:image:src" content="https://.......jpg">\n')
+
+        a.write('<link rel="manifest" href="manifest.json">\n')
+        a.write('<link rel="shortcut icon" type="image/x-icon"   href="fav/favicon.png">\n')
+        a.write('<link rel="apple-touch-icon"                    href="fav/favicon.png" />\n')
+        a.write('<link rel="apple-touch-icon-precomposed" sizes="192x192" href="fav/favicon_192x192.png">\n')
+        a.write('<link rel="apple-touch-icon" sizes="57x57"      href="fav/favicon_57x57.png">\n')
+        a.write('<link rel="apple-touch-icon" sizes="60x60"      href="fav/favicon_60x60.png">\n')
+        a.write('<link rel="apple-touch-icon" sizes="72x72"      href="fav/favicon_72x72.png">\n')
+        a.write('<link rel="apple-touch-icon" sizes="76x76"      href="fav/favicon_76x76.png">\n')
+        a.write('<link rel="apple-touch-icon" sizes="114x114"    href="fav/favicon_114x114.png">\n')
+        a.write('<link rel="apple-touch-icon" sizes="120x120"    href="fav/favicon_120x120.png">\n')
+        a.write('<link rel="apple-touch-icon" sizes="144x144"    href="fav/favicon_144x144.png">\n')
+        a.write('<link rel="apple-touch-icon" sizes="152x152"    href="fav/favicon_152x152.png">\n')
+        a.write('<link rel="apple-touch-icon" sizes="180x180"    href="fav/favicon_180x180.png">\n')   
+        a.write('<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon_16x16.png">\n')
+        a.write('<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon_32x32.png">\n')
+        a.write('<link rel="icon" type="image/png" sizes="96x96" href="fav/favicon_96x96.png">\n')
+        a.write('<link rel="icon" type="image/png" sizes="192x192" href="fav/favicon_192x192.png">\n')
+        a.write('<meta name="msapplication-TileColor" content="#ff4500">\n')
+        a.write('<meta name="msapplication-TileImage" content="fav/favicon_144x144.png">\n')
+        a.write('<meta name="theme-color" content="#ff4500"> \n')
+        a.write('</head>\n')  
+
 
 
 def append_head_tags_page(x):   
@@ -143,6 +195,8 @@ linkInstagram = 'https://www.instagram.com/cityupsounds/'
 linkBandcamp = 'https://cityupsounds.bandcamp.com/'
 
 github_repo = 'cityupsounds/'
+
+metaTwitterHandle = '@CityupSounds'
 
 productOneName = 'Zoom H6 Recorder'
 productOneImagePath = '../img/zoom_h6.jpg'
