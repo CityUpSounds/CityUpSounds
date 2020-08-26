@@ -17,58 +17,56 @@ def append_head_tags_page_index(x):
         a.write('<head>\n')
         a.write('<meta charset="UTF-8">\n')
         a.write('<meta name="viewport"    content="width=device-width, initial-scale=1.0">\n')
-        a.write('<title>CityUp Sounds | A collection of ambient sound recordings and sound effects.</title>\n') 
+        a.write('<title>'+ indexPageTitle +'</title>\n') 
         a.write('<meta name="robots"      content="index, follow">\n')
-        a.write('<meta name="description" content="A collection of ambient sound recordings and sound effects. Sharing my passion of sounds and recordings with whom share a similar interest.">\n')
+        a.write('<meta name="description" content="'+ indexPageDescritpion +'">\n')
         a.write('<meta name="googlebot"   content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">\n')
         a.write('<meta name="bingbot"     content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">\n')
         a.write('<link rel="canonical"  href="'+ websiteURL +'">\n')        
         a.write('<link rel="stylesheet" href="'+ cssCloudflare +'">\n')
         a.write('<link rel="stylesheet" href="'+ cssStylePath +'">\n')
-        a.write('<meta property="og:locale"      content="en_US">\n')
-        a.write('<meta property="og:type"        content="website">\n')
-        a.write('<meta property="og:title"       content="CityUp Sounds | A collection of ambient sound recordings and sound effects.">\n')
-        a.write('<meta property="og:description" content="A collection of ambient sound recordings and sound effects. Sharing my passion of sounds and recordings with whom share a similar interest.">\n')
-        a.write('<meta property="og:url"         content="'+ websiteURL +'">\n')
-        a.write('<meta property="og:site_name"   content="'+ websiteName +'">\n')
-        a.write('<meta property="og:see_also" content="https://cityupsounds.github.io/pages/Footstep_Tram_Tracks.html">\n')
-        a.write('<meta property="og:see_also" content="https://cityupsounds.github.io/pages/Footstep_Bush_Tracks.html">\n')
-
-        a.write('<meta property="og:image"            content="https://.......jpg" />\n')
-        a.write('<meta property="og:image:secure_url" content="https://.......jpg">\n')
-        a.write('<meta property="og:image:type"       content="image/jpeg">\n')
-        a.write('<meta property="og:image:width"      content="">\n')
-        a.write('<meta property="og:image:height"     content="">\n')
-        a.write('<meta property="og:video"            content="https://.......mp4">\n')
-        a.write('<meta property="og:video:secure_url" content="https://.......mp4">\n')
-        a.write('<meta property="og:video:type"       content="video/mp4.">\n')
-        a.write('<meta property="og:video:width"      content="">\n')
-        a.write('<meta property="og:video:height"     content="">\n')
-        a.write('<meta name="twitter:card" content="summary_large_image">\n')
-        a.write('<meta name="twitter:creator" content="'+ metaTwitterHandle +'">\n')
-        a.write('<meta name="twitter:site" content="'+ metaTwitterHandle +'">\n')
-        a.write('<meta name="twitter:title" content="CityUp Sounds | A collection of ambient sound recordings and sound effects.">\n')
-        a.write('<meta name="twitter:url" content="'+ websiteURL +'">\n')
-        a.write('<meta name="twitter:description" content="A collection of ambient sound recordings and sound effects. Sharing my passion of sounds and recordings with whom share a similar interest.">\n')
-        a.write('<meta name="twitter:image:src" content="https://.......jpg">\n')
-
+        a.write('<meta property="og:locale"             content="en_US">\n')
+        a.write('<meta property="og:type"               content="website">\n')
+        a.write('<meta property="og:title"              content="'+ indexPageTitle +'">\n')
+        a.write('<meta property="og:description"        content="'+ indexPageDescritpion +'">\n')
+        a.write('<meta property="og:url"                content="'+ websiteURL +'">\n')
+        a.write('<meta property="og:site_name"          content="'+ websiteName +'">\n')
+        a.write('<meta property="og:see_also"           content="https://cityupsounds.github.io/pages/Footstep_Tram_Tracks.html">\n')
+        a.write('<meta property="og:see_also"           content="https://cityupsounds.github.io/pages/Footstep_Bush_Tracks.html">\n')
+        # a.write('<meta property="og:image"            content="https://.......jpg" />\n')
+        # a.write('<meta property="og:image:secure_url" content="https://.......jpg">\n')
+        # a.write('<meta property="og:image:type"       content="image/jpeg">\n')
+        # a.write('<meta property="og:image:width"      content="">\n')
+        # a.write('<meta property="og:image:height"     content="">\n')
+        # a.write('<meta property="og:video"            content="https://.......mp4">\n')
+        # a.write('<meta property="og:video:secure_url" content="https://.......mp4">\n')
+        # a.write('<meta property="og:video:type"       content="video/mp4.">\n')
+        # a.write('<meta property="og:video:width"      content="">\n')
+        # a.write('<meta property="og:video:height"     content="">\n')
+        a.write('<meta name="twitter:card"              content="summary_large_image">\n')
+        a.write('<meta name="twitter:creator"           content="'+ metaTwitterHandle +'">\n')
+        a.write('<meta name="twitter:site"              content="'+ metaTwitterHandle +'">\n')
+        a.write('<meta name="twitter:title"             content="'+ indexPageTitle +'">\n')
+        a.write('<meta name="twitter:url"               content="'+ websiteURL +'">\n')
+        a.write('<meta name="twitter:description"       content="'+ indexPageDescritpion +'">\n')
+        a.write('<meta name="twitter:image:src"         content="https://.......jpg">\n')
         a.write('<link rel="manifest" href="manifest.json">\n')
-        a.write('<link rel="shortcut icon" type="image/x-icon"   href="fav/favicon.png">\n')
-        a.write('<link rel="apple-touch-icon"                    href="fav/favicon.png" />\n')
+        a.write('<link rel="shortcut icon" type="image/x-icon"            href="fav/favicon.png">\n')
+        a.write('<link rel="apple-touch-icon"                             href="fav/favicon.png" />\n')
         a.write('<link rel="apple-touch-icon-precomposed" sizes="192x192" href="fav/favicon_192x192.png">\n')
-        a.write('<link rel="apple-touch-icon" sizes="57x57"      href="fav/favicon_57x57.png">\n')
-        a.write('<link rel="apple-touch-icon" sizes="60x60"      href="fav/favicon_60x60.png">\n')
-        a.write('<link rel="apple-touch-icon" sizes="72x72"      href="fav/favicon_72x72.png">\n')
-        a.write('<link rel="apple-touch-icon" sizes="76x76"      href="fav/favicon_76x76.png">\n')
-        a.write('<link rel="apple-touch-icon" sizes="114x114"    href="fav/favicon_114x114.png">\n')
-        a.write('<link rel="apple-touch-icon" sizes="120x120"    href="fav/favicon_120x120.png">\n')
-        a.write('<link rel="apple-touch-icon" sizes="144x144"    href="fav/favicon_144x144.png">\n')
-        a.write('<link rel="apple-touch-icon" sizes="152x152"    href="fav/favicon_152x152.png">\n')
-        a.write('<link rel="apple-touch-icon" sizes="180x180"    href="fav/favicon_180x180.png">\n')   
-        a.write('<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon_16x16.png">\n')
-        a.write('<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon_32x32.png">\n')
-        a.write('<link rel="icon" type="image/png" sizes="96x96" href="fav/favicon_96x96.png">\n')
-        a.write('<link rel="icon" type="image/png" sizes="192x192" href="fav/favicon_192x192.png">\n')
+        a.write('<link rel="apple-touch-icon"      sizes="57x57"          href="fav/favicon_57x57.png">\n')
+        a.write('<link rel="apple-touch-icon"      sizes="60x60"          href="fav/favicon_60x60.png">\n')
+        a.write('<link rel="apple-touch-icon"      sizes="72x72"          href="fav/favicon_72x72.png">\n')
+        a.write('<link rel="apple-touch-icon"      sizes="76x76"          href="fav/favicon_76x76.png">\n')
+        a.write('<link rel="apple-touch-icon"      sizes="114x114"        href="fav/favicon_114x114.png">\n')
+        a.write('<link rel="apple-touch-icon"      sizes="120x120"        href="fav/favicon_120x120.png">\n')
+        a.write('<link rel="apple-touch-icon"      sizes="144x144"        href="fav/favicon_144x144.png">\n')
+        a.write('<link rel="apple-touch-icon"      sizes="152x152"        href="fav/favicon_152x152.png">\n')
+        a.write('<link rel="apple-touch-icon"      sizes="180x180"        href="fav/favicon_180x180.png">\n')   
+        a.write('<link rel="icon" type="image/png" sizes="16x16"          href="fav/favicon_16x16.png">\n')
+        a.write('<link rel="icon" type="image/png" sizes="32x32"          href="fav/favicon_32x32.png">\n')
+        a.write('<link rel="icon" type="image/png" sizes="96x96"          href="fav/favicon_96x96.png">\n')
+        a.write('<link rel="icon" type="image/png" sizes="192x192"        href="fav/favicon_192x192.png">\n')
         a.write('<meta name="msapplication-TileColor" content="#ff4500">\n')
         a.write('<meta name="msapplication-TileImage" content="fav/favicon_144x144.png">\n')
         a.write('<meta name="theme-color" content="#ff4500"> \n')
@@ -77,17 +75,70 @@ def append_head_tags_page_index(x):
 
 
 def append_head_tags_page(x):   
-    with open(x,'a') as a:        
+    with open(x,'a') as a:
         a.write('<!DOCTYPE html>\n')
         a.write('<html lang="en">\n')
         a.write('<head>\n')
         a.write('<meta charset="UTF-8">\n')
-        a.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">\n')
+        a.write('<meta name="viewport"                content="width=device-width, initial-scale=1.0">\n')
         a.write('<title>'+ valuePageTitle +' | '+ websiteName +'</title>\n')
-        a.write('<link rel="shortcut icon" href="favicon.png" type="image/x-icon">\n')
+        a.write('<meta name="robots"                  content="index, follow">\n')
+        a.write('<meta name="description"             content="'+ valueMetaDescription +'">\n')
+        a.write('<meta name="googlebot"               content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">\n')
+        a.write('<meta name="bingbot"                 content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">\n')
+        a.write('<link rel="canonical"  href="'+ websiteURL +'">\n')        
         a.write('<link rel="stylesheet" href="'+ cssCloudflare +'">\n')
         a.write('<link rel="stylesheet" href="../'+ cssStylePath +'">\n')
-        a.write('</head>\n')     
+        a.write('<meta property="og:locale"           content="en_US">\n')
+        a.write('<meta property="og:type"             content="website">\n')
+        a.write('<meta property="og:title"            content="'+ valuePageTitle +'">\n')
+        a.write('<meta property="og:description"      content="'+ valueMetaDescription +'">\n')
+        a.write('<meta property="og:url"              content="'+ websiteURL +'">\n')
+        a.write('<meta property="og:site_name"        content="'+ websiteName +'">\n')
+        a.write('<meta property="og:see_also"         content="https://cityupsounds.github.io/pages/Footstep_Tram_Tracks.html">\n')
+        a.write('<meta property="og:see_also"         content="https://cityupsounds.github.io/pages/Footstep_Bush_Tracks.html">\n')
+        a.write('<meta property="og:image"            content="../img/'+ valuePageImagePath +'" />\n')
+        a.write('<meta property="og:image:secure_url" content="../img/'+ valuePageImagePath +'">\n')
+        a.write('<meta property="og:image:type"       content="image/jpeg">\n')
+        a.write('<meta property="og:image:width"      content="">\n')
+        a.write('<meta property="og:image:height"     content="">\n')
+        a.write('<meta property="og:video"            content="'+ valuePageVideoPath +'">\n')
+        a.write('<meta property="og:video:secure_url" content="'+ valuePageVideoPath +'">\n')
+        a.write('<meta property="og:video:type"       content="video/mp4.">\n')
+        a.write('<meta property="og:video:width"      content="560">\n')
+        a.write('<meta property="og:video:height"     content="315">\n')
+        a.write('<meta name="twitter:card"            content="summary_large_image">\n')
+        a.write('<meta name="twitter:creator"         content="'+ metaTwitterHandle +'">\n')
+        a.write('<meta name="twitter:site"            content="'+ metaTwitterHandle +'">\n')
+        a.write('<meta name="twitter:title"           content="'+ valuePageTitle +'">\n')
+        a.write('<meta name="twitter:url"             content="'+ websiteURL +'">\n')
+        a.write('<meta name="twitter:description"     content="'+ valueMetaDescription +'">\n')
+        a.write('<meta name="twitter:image:src"       content="../img/'+ valuePageImagePath +'">\n')
+        a.write('<link rel="manifest" href="manifest.json">\n')
+        a.write('<link rel="shortcut icon" type="image/x-icon"            href="../fav/favicon.png">\n')
+        a.write('<link rel="apple-touch-icon"                             href="../fav/favicon.png">\n')
+        a.write('<link rel="apple-touch-icon-precomposed" sizes="192x192" href="../fav/favicon_192x192.png">\n')
+        a.write('<link rel="apple-touch-icon"             sizes="57x57"   href="../fav/favicon_57x57.png">\n')
+        a.write('<link rel="apple-touch-icon"             sizes="60x60"   href="../fav/favicon_60x60.png">\n')
+        a.write('<link rel="apple-touch-icon"             sizes="72x72"   href="../fav/favicon_72x72.png">\n')
+        a.write('<link rel="apple-touch-icon"             sizes="76x76"   href="../fav/favicon_76x76.png">\n')
+        a.write('<link rel="apple-touch-icon"             sizes="114x114" href="../fav/favicon_114x114.png">\n')
+        a.write('<link rel="apple-touch-icon"             sizes="120x120" href="../fav/favicon_120x120.png">\n')
+        a.write('<link rel="apple-touch-icon"             sizes="144x144" href="../fav/favicon_144x144.png">\n')
+        a.write('<link rel="apple-touch-icon"             sizes="152x152" href="../fav/favicon_152x152.png">\n')
+        a.write('<link rel="apple-touch-icon"             sizes="180x180" href="../fav/favicon_180x180.png">\n')   
+        a.write('<link rel="icon"     type="image/png"    sizes="16x16"   href="../fav/favicon_16x16.png">\n')
+        a.write('<link rel="icon"     type="image/png"    sizes="32x32"   href="../fav/favicon_32x32.png">\n')
+        a.write('<link rel="icon"     type="image/png"    sizes="96x96"   href="../fav/favicon_96x96.png">\n')
+        a.write('<link rel="icon"     type="image/png"    sizes="192x192" href="../fav/favicon_192x192.png">\n')
+        a.write('<meta name="msapplication-TileColor"  content="#ff4500">\n')
+        a.write('<meta name="msapplication-TileImage"  content="../fav/favicon_144x144.png">\n')
+        a.write('<meta name="theme-color"              content="#ff4500"> \n')
+        a.write('</head>\n')  
+
+
+
+
 
 
 def append_NavBar(x):
@@ -194,18 +245,22 @@ linkYoutube = 'YouTube'
 linkInstagram = 'https://www.instagram.com/cityupsounds/'
 linkBandcamp = 'https://cityupsounds.bandcamp.com/'
 
-github_repo = 'cityupsounds/'
 
+
+github_repo = 'cityupsounds/'
 metaTwitterHandle = '@CityupSounds'
+
+
+indexPageTitle = 'CityUp Sounds | A collection of ambient sound recordings and sound effects.'
+indexPageDescritpion = 'A collection of ambient sound recordings and sound effects. Sharing my passion of sounds and recordings with whom share a similar interest.'
+
 
 productOneName = 'Zoom H6 Recorder'
 productOneImagePath = '../img/zoom_h6.jpg'
 productOneURL = 'Product 1'
-
 productTwoName = 'Zoom Shotgun Microphone'
 productTwoImagePath = '../img/zoom_shotgun_microphone.jpg'
 productTwoURL = 'Product 2'
-
 productThreeName = 'Zoom Accessories Pack'
 productThreeImagePath = '../img/zoom_accessories.jpg'
 productThreeURL = 'Product 3'
@@ -297,66 +352,72 @@ for d in dictionary:
         valuePageTitle = dictionary[d]['pageTitle']
     except: 
         valuePageTitle = ""
-        print('Page Title has ZERO value')
+        print('Page '+ valuePageName +': Title has ZERO value')
     # ================
     try: 
         valuePageImagePath = dictionary[d]['pageImage']
     except: 
         valuePageImagePath = ""
-        print('Page Image has ZERO value')
+        print('Page '+ valuePageName +': Image has ZERO value')
+    # ================
+    try: 
+        valueMetaDescription = dictionary[d]['pageMetaDescription']
+    except: 
+        valueMetaDescription = ""
+        print('Page '+ valuePageName +': Meta Data Description has ZERO value')
     # ================
     try: 
         valuePageVideoPath = dictionary[d]['pageVideo']
     except: 
         valuePageVideoPath = ""
-        print('Page Video has ZERO value')
+        print('Page '+ valuePageName +': Video has ZERO value')
     # ================    
     try: valueLocation = dictionary[d]['location']
     except: 
         valueLocation  = ""
-        print('Location has ZERO value')
+        print('Page '+ valuePageName +': Location has ZERO value')
     # ================
     try: valueAudioFormat = dictionary[d]['audioFormat']
     except: 
         valueAudioFormat = ""
-        print('AudioFormat has ZERO value')
+        print('Page '+ valuePageName +': AudioFormat has ZERO value')
     # ================
     try: valueDuration = dictionary[d]['duration']
     except: 
         valueDuration = ""
-        print('Duration has ZERO value')
+        print('Page '+ valuePageName +': Duration has ZERO value')
     # ================
     try: valueRecorder = dictionary[d]['recorder']
     except: 
         valueRecorder = ""
-        print('Recorder has ZERO value')
+        print('Page '+ valuePageName +': Recorder has ZERO value')
     # ================
     try: valueMicrophone = dictionary[d]['microphone']
     except: 
         valueMicrophone = ""
-        print('Microphone has ZERO value')
+        print('Page '+ valuePageName +': Microphone has ZERO value')
     # ================
     try: valueAudioEditing = dictionary[d]['audioEditing']
     except: 
         valueAudioEditing = ""
-        print('Audio Editing has ZERO value')
+        print('Page '+ valuePageName +': Audio Editing has ZERO value')
     # ================
     try: valueVideoAvailable = dictionary[d]['videoAvailable']
     except: 
         valueVideoAvailable = ""
-        print('VideoAvailable has ZERO value')
+        print('Page '+ valuePageName +': VideoAvailable has ZERO value')
     # ================
     try: valueDelivery = dictionary[d]['delivery'] 
     except: 
         valueDelivery = ""
-        print('Delivery has ZERO value')
+        print('Page '+ valuePageName +': Delivery has ZERO value')
     # ================    
     try: 
         valueDescription = dictionary[d]['description']
         valueDescription = valueDescription.replace('\n', '</p><p>')
     except: 
         valueDescription = ""
-        print('Description has ZERO value')
+        print('Page '+ valuePageName +': Description has ZERO value')
         
     
     page = valuePageName
